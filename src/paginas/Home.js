@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../componentes/base/Header';
 import Buscador from '../componentes/listarLibros/Buscador';
 import LibroCard from '../componentes/listarLibros/LibroCard';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -28,7 +29,9 @@ const Home = () => {
                 <div className='content-cards'>
                     {
                         books.map(book => (
-                            <LibroCard book={book} />
+                            <Link to="/libro">
+                                <LibroCard book={book} />
+                            </Link>
                         ))
                     }
                 </div>

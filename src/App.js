@@ -4,16 +4,19 @@ import './App.css';
 //import Header from './componentes/base/Header';
 //import LibroCard from './componentes/listarLibros/LibroCard';
 import Home from './paginas/Home';
-
+import InfoLibro from './paginas/InfoLibro';
 
 const App = () => {
 
   return (
-    <Router>
-      <div className="App">
-        <Home />
-      </div>
-    </Router>
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="libro" element={<InfoLibro />} />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 
