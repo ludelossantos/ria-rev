@@ -9,21 +9,25 @@ const InfoLibro = () => {
 
     useEffect(() => {
         if (titulo !== '') {
-            fetch('https://www.googleapis.com/books/v1/volumes?q=' + titulo.replace(' ', '+'))
+            const formattedTitulo = encodeURIComponent(titulo);
+    
+            fetch('https://www.googleapis.com/books/v1/volumes?q=' + formattedTitulo)
                 .then((response) => {
                     return response.json()
                 })
                 .then((data) => {
-                    setLibro(data?.items[0] || [])
-                })
+                    setLibro(data?.items[0] || []);
+                });
         }
-    }, [titulo])
+    }, [titulo]);
+
+    console.log("libro: ",Libro);
 
     return (
         <div>
             <Header />
             <header className="App-header">
-                <Card style={{ padding: '1rem' }}>
+                <Card style={{ padding: '5rem' }}>
                     <CardContent>
                         <CardMedia
                             component="img"
@@ -33,19 +37,19 @@ const InfoLibro = () => {
                         />
                         <Box sx={{ mt: 2 }}>
                             <Typography gutterBottom variant="h5" component="div">
-                                {Libro.title}
+                                {Libro?.volumeInfo?.title}
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                {Libro.authors}
+                                {Libro?.volumeInfo?.authors?.join(', ')}
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                {Libro.publisher}
+                                {Libro?.volumeInfo?.publisher}
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                {Libro.publishedDate}
+                                {Libro?.volumeInfo?.publishedDate}
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                {Libro.description}
+                                {Libro?.volumeInfo?.description}
                             </Typography>
                         </Box>
                     </CardContent>

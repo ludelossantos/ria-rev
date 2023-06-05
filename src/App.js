@@ -1,4 +1,4 @@
-//import React, { useEffect } from 'react';
+//import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 //import Header from './componentes/base/Header';
@@ -13,7 +13,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="libro" element={<InfoLibro />} />
+          <Route path="/libro/:titulo" element={<InfoLibro />} />
         </Routes>
       </Router>
     </div>
