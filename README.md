@@ -9,13 +9,13 @@ Prototipo de aplicación para el Taller de Aplicaciones de Internet Ricas. El si
 
 • [Código fuente de la aplicación](#Codigo-fuente)
 
-• [Diseño del sistema y descripción de tecnologías](#Diseno-y-tecnologias)
+• [Diseño del sistema y descripción de tecnologías](#Diseño-del-sistema-y-descripción-de-tecnologías)
 
-• [Configuración e instalación](#configuracion)
+• [Configuración e instalación](#Configuración-e-instalación)
 
-• [Mock ups y Mapa de navegación del proyecto](#mockup-y-mapa-navegacion)
+• [Mock ups y Mapa de navegación del proyecto](#Mock-ups-y-Mapa-de-navegación-del-proyecto)
 
-• [Descripción de servicios rest utilizados](#descripcion-servicios-rest)
+• [Descripción de servicios rest utilizados](#Descripción-de-servicios-rest-utilizados)
 
 ## Codigo fuente
 Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
