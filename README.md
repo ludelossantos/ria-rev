@@ -20,12 +20,7 @@ Prototipo de aplicación para el Taller de Aplicaciones de Internet Ricas. El si
 • [Descripción de servicios rest utilizados](#descripcion-servicios-rest)
 
 ## Codigo fuente
-Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
-AngularJS-powered HTML5 Markdown editor.
-
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
+El codigo se encuentra en este link: https://github.com/ludelossantos/ria-rev.git 
 
 ## Historias de Usuario
 
@@ -55,54 +50,24 @@ AngularJS-powered HTML5 Markdown editor.
 2. La aplicación realiza la búsqueda y no se muestra ningún libro en los resultados de la búsqueda.
 3. El usuario puede realizar una nueva búsqueda con otro término.
 
-
 ## Diseño del sistema y descripción de tecnologías
 
-- Import a HTML file and watch it magically convert to Markdown
-- Drag and drop images (requires your Dropbox account be linked)
-- Import and save files from GitHub, Dropbox, Google Drive and One Drive
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
+##### Frontend: 
+   - Página web construida con React. 
+   - El componente fundamental es una barra de búsqueda. Se utilizan además tarjetas para estructurar la información. 
+   - Al realizar la búsqueda se envía una solicitud a la API REST para la búsqueda de libros y se muestran los resultados en la misma página principal. Al seleccionar uno de los resultados se amplía la información en una nueva página.
+   -  El frontend utiliza el método Fetch para realizar las solicitudes HTTP a la API REST. 
 
-Markdown is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
-As [John Gruber] writes on the [Markdown site][df1]
+##### Backend: 
+   - API REST de Google Books, que da respuesta a las solicitudes enviadas desde el frontend. 
+   - Al realizar la primera consulta la API devuelve los resultados en formato JSON.
 
 ## Configuración e instalación
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### Available Scripts
-
-In the project directory, you can run:
-
+Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
+En el directorio del proyecto puedes ejecutar:
 #### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-#### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-#### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-#### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Se puede visualizar en [http://localhost:3000](http://localhost:3000). La página se recargará automáticamente cuando se realicen cambios.
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
