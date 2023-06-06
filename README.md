@@ -109,4 +109,6 @@ _En el centro de la página se encuentra una tarjeta destacada en blanco que pre
 _Esta estructura muestra que la página de inicio tiene dos opciones de navegación: realizar una búsqueda de libros y ver los resultados de la búsqueda. Los usuarios pueden hacer clic en un libro específico para ver los detalles en la página de Detalle del libro._
 
 ## Descripción de servicios rest utilizados
-Install the dependencies and devDependencies and start the server.
+Se utilizó el servicio Books API de Google. Esta API permite utlilizar funciones de Google Books en el sitio. La api maneja como recurso principal, el _Volume_, que representa los datos sobre un libro o revista (un volumen). También cuenta con el recurso _Bookshelf_ (estantería), que representa la estantería de libros de un usuario. Este recurso no fue utilizado en este proyecto. 
+
+Los grupos de recursos se llaman _Collection_ . La colección de volúmenes (Volume collection) permite listar todos los volumenes que coinciden con una búsqueda.
