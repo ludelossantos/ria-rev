@@ -27,7 +27,7 @@ AngularJS-powered HTML5 Markdown editor.
 - See HTML in the right
 - ✨Magic ✨
 
-## Historia de Usuario
+## Historias de Usuario
 
 ### Búsqueda de Libros por Título
 
