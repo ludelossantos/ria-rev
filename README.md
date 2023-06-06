@@ -82,7 +82,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Mock ups y Mapa de navegación del proyecto
 
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
+• [Mock ups](#mockup)
+
+![Mockup de la página de inicio](../mockups/1.png)
+_El mockup representa la página de inicio del sitio web. El diseño general se compone de un navbar y un buscador._
+
+_El navbar es de color amarillo claro y en la esquina izquierda se encuentra el logo y el nombre de la app, proporcionando una identificación clara._
+
+_El buscador se encuentra arriba y en el centro de la página. Se presenta en un área en blanco, creando un contraste con el fondo amarillo del navbar. El buscador incluye un campo de entrada de texto y un botón de búsqueda, permitiendo a los usuarios ingresar palabras clave y obtener resultados rápidos._
+
+![Mockup de la página de inicio con resultados de busqueda de un libro](../mockups/2.png)
+_El mockup es una extensión de la página de inicio y presenta una vista ampliada de los resultados de búsqueda. Después del campo de búsqueda, se muestran los libros que coinciden con los términos ingresados._
+
+_Cada libro se presenta en una tarjeta blanca que contiene la imagen del libro, su título y el nombre del autor. Las tarjetas están diseñadas para mostrar la información de manera clara, permitiendo a los usuarios tener una vista rápida de los resultados. La imagen del libro ayuda a visualizar el contenido y capturar el interés del usuario, mientras que el título y el autor proporcionan detalles clave sobre el libro._
+
+_La disposición de las tarjetas puede variar dependiendo de la cantidad de resultados de búsqueda, con un límite de 10 tarjetas. Esto permite que los usuarios puedan desplazarse y explorar los diferentes libros encontrados en su búsqueda._
+
+![Mockup de la página de informacion del libro](../mockups/3.png)
+_El último mockup muestra cuando un usuario hace clic en una de las tarjetas de libro en la página de resultados de búsqueda. La página mantiene el mismo navbar que se encuentra en la página de inicio, pero esta vez sin el buscador.
+
+_En el centro de la página se encuentra una tarjeta destacada en blanco que presenta detalles ampliados sobre el libro seleccionado. La tarjeta contiene la imagen del libro, el título, el autor y la sinopsis del mismo._
+
+• [Mapa de navegación](#mapa-navegacion)
 
 ## Descripción de servicios rest utilizados
 Install the dependencies and devDependencies and start the server.
