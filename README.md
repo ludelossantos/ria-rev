@@ -13,9 +13,7 @@ Prototipo de aplicación para el Taller de Aplicaciones de Internet Ricas. El si
 
 • [Configuración e instalación](#configuracion)
 
-• [Mock ups](#mockup)
-
-• [Mapa de navegación](#mapa-navegacion)
+• [Mock ups y mapa de navegación del proyecto](#mock-ups-y-mapa-de-navegación-del-proyecto)
 
 • [Descripción de servicios rest utilizados](#descripcion-servicios-rest)
 
@@ -84,7 +82,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Mock ups y Mapa de navegación del proyecto
 
-• [Mock ups](#mockup)
+### Mock ups
 
 ![Mockup de la página de inicio](https://github.com/ludelossantos/ria-rev/blob/sofiNuevo/mockups/1.png)
 _El mockup representa la página de inicio del sitio web. El diseño general se compone de un navbar y un buscador._
@@ -105,7 +103,7 @@ _El último mockup muestra cuando un usuario hace clic en una de las tarjetas de
 
 _En el centro de la página se encuentra una tarjeta destacada en blanco que presenta detalles ampliados sobre el libro seleccionado. La tarjeta contiene la imagen del libro, el título, el autor y la sinopsis del mismo._
 
-• [Mapa de navegación](#mapa-navegacion)
+### Mapa de navegación
 
 ## Descripción de servicios rest utilizados
 Install the dependencies and devDependencies and start the server.
