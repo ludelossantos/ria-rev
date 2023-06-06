@@ -9,6 +9,8 @@ Prototipo de aplicación para el Taller de Aplicaciones de Internet Ricas. El si
 
 • [Código fuente de la aplicación](#Codigo-fuente)
 
+• [Historias de usuario](#Historias-de-usuario)
+
 • [Diseño del sistema y descripción de tecnologías](#Diseno-y-tecnologias)
 
 • [Configuración e instalación](#configuracion)
@@ -24,6 +26,35 @@ AngularJS-powered HTML5 Markdown editor.
 - Type some Markdown on the left
 - See HTML in the right
 - ✨Magic ✨
+
+## Historia de Usuario
+
+### Búsqueda de Libros por Título
+
+**Como** Usuario de la aplicación
+**Quiero** poder buscar libros por su título
+**Para** encontrar rápidamente libros específicos que me interesen
+
+### Criterios de Aceptación
+
+- La aplicación debe tener un campo de búsqueda donde se pueda ingresar el título del libro.
+- Al realizar la búsqueda, la aplicación debe mostrar los resultados coincidentes con el título ingresado.
+- Los resultados de la búsqueda deben incluir la imagen, el título y el autor de cada libro.
+- La aplicación debe permitir hacer clic en un libro para ver más detalles en la página de "Detalle del libro".
+
+### Escenarios
+
+**Escenario 1:** Búsqueda exitosa de un libro por título
+1. El usuario ingresa "Harry Potter" en el campo de búsqueda.
+2. La aplicación realiza la búsqueda y muestra los resultados coincidentes.
+3. Se muestran varios libros relacionados con "Harry Potter", incluyendo la imagen, el título y el autor de cada libro.
+4. El usuario hace clic en uno de los libros para ver más detalles en la página de "Detalle del libro".
+
+**Escenario 2:** Búsqueda sin resultados 
+1. El usuario ingresa "xyz" en el campo de búsqueda.
+2. La aplicación realiza la búsqueda y no se muestra ningún libro en los resultados de la búsqueda.
+3. El usuario puede realizar una nueva búsqueda con otro término.
+
 
 ## Diseño del sistema y descripción de tecnologías
 
