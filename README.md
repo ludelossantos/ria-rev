@@ -13,7 +13,9 @@ Prototipo de aplicación para el Taller de Aplicaciones de Internet Ricas. El si
 
 • [Configuración e instalación](#configuracion)
 
-• [Mock ups y Mapa de navegación del proyecto](#mockup-y-mapa-navegacion)
+• [Mock ups](#mockup)
+
+• [Mapa de navegación](#mapa-navegacion)
 
 • [Descripción de servicios rest utilizados](#descripcion-servicios-rest)
 
