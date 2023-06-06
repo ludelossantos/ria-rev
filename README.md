@@ -99,11 +99,18 @@ _Cada libro se presenta en una tarjeta blanca que contiene la imagen del libro, 
 _La disposición de las tarjetas puede variar dependiendo de la cantidad de resultados de búsqueda, con un límite de 10 tarjetas. Esto permite que los usuarios puedan desplazarse y explorar los diferentes libros encontrados en su búsqueda._
 
 ![Mockup de la página de informacion del libro](https://github.com/ludelossantos/ria-rev/blob/sofiNuevo/mockups/3.png)
-_El último mockup muestra cuando un usuario hace clic en una de las tarjetas de libro en la página de resultados de búsqueda. La página mantiene el mismo navbar que se encuentra en la página de inicio, pero esta vez sin el buscador.
+_El último mockup muestra cuando un usuario hace clic en una de las tarjetas de libro en la página de resultados de búsqueda. La página mantiene el mismo navbar que se encuentra en la página de inicio, pero esta vez sin el buscador._
 
 _En el centro de la página se encuentra una tarjeta destacada en blanco que presenta detalles ampliados sobre el libro seleccionado. La tarjeta contiene la imagen del libro, el título, el autor y la sinopsis del mismo._
 
 ### Mapa de navegación
+
+- Home
+  - Búsqueda de libros
+  - Resultados de búsqueda
+    - Detalle del libro
+
+_Esta estructura muestra que la página de inicio tiene dos opciones de navegación: realizar una búsqueda de libros y ver los resultados de la búsqueda. Los usuarios pueden hacer clic en un libro específico para ver los detalles en la página de Detalle del libro._
 
 ## Descripción de servicios rest utilizados
 Install the dependencies and devDependencies and start the server.
