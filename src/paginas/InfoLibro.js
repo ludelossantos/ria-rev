@@ -27,7 +27,7 @@ const InfoLibro = () => {
         <div>
             <Header />
             <header className="App-header">
-                <Card style={{ padding: '5rem', width: '75%', margin: '0 auto' }}>
+                <Card style={{ padding: '5rem', width: '75%', margin: '0 auto', marginTop: '2rem' }}>
                     <CardContent>
                         <CardMedia
                             component="img"
