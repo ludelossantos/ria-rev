@@ -1,25 +1,13 @@
-/*.libro-card {
-  display: flex;
-  flex-direction: column;
-  background-color: #f8f8f8;
-  padding: 50px;
-  border-radius: 8px;
+
+a {
+  text-decoration: none;
+  color: rgb(53, 53, 53);
 }
 
-.libro-image {
-  height: 0;
-  padding-top: 50%;
-}*/
-/*
-.libro-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color:#333
+.card {
+  transition: transform 0.5s ease-in-out;
 }
 
-.libro-description {
-  font-size: 14px;
-  color: #333;
+.card:hover {
+  transform: scale(1.02);
 }
-*/

@@ -28,13 +28,13 @@ const InfoLibro = () => {
             <Header />
             <header className="App-header">
             <Box sx={{ my: 2 }}>
-                <Card style={{ maxWidth: '1000px', width: '100%' }}>
+                <Card style={{ padding: '5rem', width: '75%', margin: '0 auto' }}>
                     <Grid container justifyContent="center">
                         <Grid item xs={12} sm={10} md={8} lg={6}>
                             <CardMedia
                                 component="img"
                                 height="auto"
-                                image={Libro?.volumeInfo?.imageLinks?.thumbnail || ''}
+                                image={Libro?.volumeInfo?.imageLinks?.thumbnail || '/elisa-calvet-b-S3nUOqDmUvc-unsplash.jpg'}
                                 alt="Libro sin imagen"
                             />
                         </Grid>
@@ -44,16 +44,16 @@ const InfoLibro = () => {
                                     <Typography gutterBottom variant="h5" component="div">
                                         {Libro?.volumeInfo?.title}
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
+                                    <Typography variant="body2" color="text.secondary" sx={{ fontStyle: 'italic', fontSize: '20px' }}>
                                         {Libro?.volumeInfo?.authors?.join(', ')}
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
+                                    <Typography variant="body2" color="text.secondary" sx={{ fontWeight: 'bold' , fontSize: '18px'}}>
                                         {Libro?.volumeInfo?.publisher}
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
+                                    <Typography variant="body2" color="text.secondary" sx={{ fontWeight: 'bold', fontSize: '18px'}}>
                                         {Libro?.volumeInfo?.publishedDate}
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary" style={{ overflow: 'auto', maxHeight: 'auto' }}>
+                                    <Typography variant="body2" color="text.secondary" style={{ overflow: 'auto', maxHeight: 'auto', fontSize: '16px' }}>
                                         {Libro?.volumeInfo?.description}
                                     </Typography>
                                 </Box>

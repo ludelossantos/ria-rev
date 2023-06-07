@@ -1,19 +1,21 @@
 import React from 'react';
-//import './LibroCard.css';
+import './LibroCard.css';
 import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
+
+
 
 const LibroCard = ({ book }) => {
 
     const { volumeInfo } = book;
 
     return (
-        <Card style={{ padding: '1rem' }}>
+        <Card className="card" style={{ padding: '1rem' }}>
             <Link to={`/libro/${encodeURIComponent(volumeInfo.title)}`}>
             <CardMedia
                 component="img"
                 height="140"
-                image={volumeInfo?.imageLinks?.thumbnail || ''}
+                image={volumeInfo?.imageLinks?.thumbnail || '/elisa-calvet-b-S3nUOqDmUvc-unsplash.jpg'}
                 alt="Libro sin imagen"
             />
             <CardContent>
