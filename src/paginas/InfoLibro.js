@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import Header from '../componentes/base/Header';
 import { Card, CardContent, CardMedia, Typography, Box, Grid } from '@mui/material';
 import { useParams } from 'react-router-dom';
+import Header from '../componentes/base/Header';
 import '../componentes/listarLibros/LibroCard.css'
 
 const InfoLibro = () => {

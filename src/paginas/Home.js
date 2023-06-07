@@ -1,9 +1,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../componentes/base/Header';
 import Buscador from '../componentes/listarLibros/Buscador';
 import LibroCard from '../componentes/listarLibros/LibroCard';
-import { Link } from 'react-router-dom';
-
 
 const Home = () => {
     const [books, setBooks] = useState([])
@@ -29,7 +28,7 @@ const Home = () => {
                 <div className='content-cards'>
                     {
                         books.map(book => (
-                            <Link to="/libro">
+                            <Link to="/libro" key={book.id}>
                                 <LibroCard book={book} />
                             </Link>
                         ))
