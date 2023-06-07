@@ -1,25 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../componentes/base/Header';
 import Buscador from '../componentes/listarLibros/Buscador';
 import LibroCard from '../componentes/listarLibros/LibroCard';
-import { Link } from 'react-router-dom';
-
 
 const Home = () => {
     const [books, setBooks] = useState([])
     const [search, setSearch] = useState("")
 
+    const consumeApi = useCallback(async() => {
+        const response = await fetch('https://www.googleapis.com/books/v1/volumes?q=' + search.replace(' ', '+'));
+        const responseJson = await response.json();
+        setBooks(responseJson?.items || []);
+    }, [search]);
+
     useEffect(() => {
         if (search !== '') {
-            fetch('https://www.googleapis.com/books/v1/volumes?q=' + search.replace(' ', '+'))
-                .then((response) => {
-                    return response.json()
-                })
-                .then((data) => {
-                    setBooks(data?.items || [])
-                })
+            consumeApi();
         }
-    }, [search])
+    }, [search, consumeApi]);
 
     return (
         <div>
@@ -29,7 +28,7 @@ const Home = () => {
                 <div className='content-cards'>
                     {
                         books.map(book => (
-                            <Link to="/libro">
+                            <Link to="/libro" key={book.id}>
                                 <LibroCard book={book} />
                             </Link>
                         ))

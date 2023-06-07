@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const Buscador = ({ onBuscar }) => {
   const [busqueda, setBusqueda] = useState('');
@@ -18,6 +19,10 @@ const Buscador = ({ onBuscar }) => {
       <button type="submit">Buscar</button>
     </form>
   );
+};
+
+Buscador.propTypes = {
+    onBuscar: PropTypes.func.isRequired
 };
 
 export default Buscador;

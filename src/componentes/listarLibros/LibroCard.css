@@ -1,3 +1,4 @@
+
 a {
   text-decoration: none;
   color: rgb(53, 53, 53);
@@ -10,31 +11,3 @@ a {
 .card:hover {
   transform: scale(1.02);
 }
-
-/* .libro-card {
-    display: flex;
-    flex-direction: column;
-    background-color: #f8f8f8;
-    padding: 50px;
-    border-radius: 8px;
-  }
-  
-  .libro-image {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    margin-right: 20px;
-  }
-  
-  .libro-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color:#333
-  }
-  
-  .libro-description {
-    font-size: 14px;
-    color: #333;
-  }
-   */

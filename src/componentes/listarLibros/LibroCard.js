@@ -1,11 +1,10 @@
 import React from 'react';
-import './LibroCard.css';
-import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
+import PropTypes from 'prop-types';
+import './LibroCard.css';
 
-
-
-const LibroCard = ({ book }) => {
+const LibroCard  = ({ book }) => {
 
     const { volumeInfo } = book;
 
@@ -31,6 +30,10 @@ const LibroCard = ({ book }) => {
             </Link>
         </Card>
     );
+};
+
+LibroCard.propTypes = {
+    book: PropTypes.object.isRequired
 };
 
 export default LibroCard;
