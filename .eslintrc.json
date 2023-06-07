@@ -1,0 +1,17 @@
+{
+    "plugins": [
+      "security"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:security/recommended"
+    ],
+    "rules": {
+        "no-console": "error",
+        "no-unused-vars": "warn",
+        "no-undef": "error",
+        "security/detect-object-injection": "warn",
+        "security/detect-non-literal-require": "warn"
+    }
+  }
+  
