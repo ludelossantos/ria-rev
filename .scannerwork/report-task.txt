@@ -1,0 +1,6 @@
+projectKey=lab2-ria
+serverUrl=http://localhost:9000
+serverVersion=10.0.0.68432
+dashboardUrl=http://localhost:9000/dashboard?id=lab2-ria
+ceTaskId=AYiXzz4rgDxV7awy7-_U
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYiXzz4rgDxV7awy7-_U
